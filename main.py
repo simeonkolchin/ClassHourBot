@@ -54,10 +54,10 @@ def callback_inline(call):
     if call.data == 'F1':
         qs[call.message.chat.id, "q1"] = '0 баллов'
         buttons = [
-            types.InlineKeyboardButton(text='1990', callback_data='T2'),
+            types.InlineKeyboardButton(text='1990', callback_data='F2'),
             types.InlineKeyboardButton(text='1998', callback_data='F2'),
             types.InlineKeyboardButton(text='1983', callback_data='F2'),
-            types.InlineKeyboardButton(text='1980', callback_data='F2')
+            types.InlineKeyboardButton(text='1980', callback_data='T2')
         ]
         keyboard = types.InlineKeyboardMarkup(row_width=1)
         keyboard.add(*buttons)
@@ -70,10 +70,10 @@ def callback_inline(call):
     if call.data == 'T1':
         qs[call.message.chat.id, "q1"] = '1 балл'
         buttons = [
-            types.InlineKeyboardButton(text='1990', callback_data='T2'),
+            types.InlineKeyboardButton(text='1990', callback_data='F2'),
             types.InlineKeyboardButton(text='1998', callback_data='F2'),
             types.InlineKeyboardButton(text='1983', callback_data='F2'),
-            types.InlineKeyboardButton(text='1980', callback_data='F2')
+            types.InlineKeyboardButton(text='1980', callback_data='T2')
         ]
         keyboard = types.InlineKeyboardMarkup(row_width=1)
         keyboard.add(*buttons)
